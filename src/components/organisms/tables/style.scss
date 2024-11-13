@@ -1,0 +1,218 @@
+#table {
+	padding: 160px 0;
+	background: var(--gray-gr-07);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&::before {
+		content: '';
+		width: 100%;
+		height: 280px;
+		background: var(--purple-pr-02);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	.table-wrapper {
+		position: relative;
+		z-index: 999;
+		border-radius: 8px;
+		overflow: hidden;
+		border: 1px solid var(--gray-gr-06);
+		.title {
+			font-family: 'Public Sans';
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 34px;
+			color: var(--black-bl-01);
+			padding: 8px;
+			background: var(--white);
+		}
+		.table {
+			margin: 0;
+			thead {
+				tr {
+					th {
+						width: 100%;
+						max-width: 14%;
+						font-family: 'Public Sans';
+						font-size: 14px;
+						font-weight: 600;
+						line-height: 21px;
+						color: var(--gray-gr-01);
+						background: var(--gray-gr-05);
+						border: none;
+						&:first-child {
+							text-align: unset !important;
+						}
+					}
+				}
+			}
+			tbody {
+				tr {
+					td {
+						font-family: 'Public Sans';
+						font-size: 14px;
+						font-weight: 500;
+						line-height: 21px;
+						letter-spacing: 0.005em;
+						color: var(--gray-gr-02);
+						vertical-align: middle;
+						&:first-child,
+						&:last-child {
+							text-align: unset !important;
+						}
+						.flex {
+							display: flex;
+							align-items: center;
+							gap: 8px;
+							img {
+								width: 40px;
+								height: 40px;
+								border-radius: 50%;
+								background: var(--gray-gr-04);
+							}
+						}
+						.name {
+							padding: 0;
+							border: none;
+							outline: none;
+							background: transparent;
+							font-family: 'Public Sans';
+							font-size: 14px;
+							font-weight: 600;
+							line-height: 21px;
+							letter-spacing: 0.005em;
+							color: var(--gray-gr-02);
+							text-align: start;
+						}
+						.email {
+							font-family: 'Public Sans';
+							font-size: 14px;
+							font-weight: 400;
+							line-height: 21px;
+							letter-spacing: 0.005em;
+							color: var(--gray-gr-03);
+						}
+						.btn-show {
+							padding: 0;
+							border: none;
+							outline: none;
+							background: transparent;
+							font-family: 'Public Sans';
+							font-size: 14px;
+							font-weight: 500;
+							line-height: 21px;
+							letter-spacing: 0.005em;
+							color: var(--purple-pr-01);
+						}
+					}
+				}
+			}
+		}
+		.pagination {
+			margin: 0;
+			padding: 16px 8px;
+			justify-content: end;
+			background: var(--white);
+		}
+	}
+}
+
+/* Small mobile */
+@media (min-width: 320px) and (max-width: 374px) {
+	#table {
+		padding: 80px 0;
+		.table-wrapper {
+			overflow-x: scroll;
+			scrollbar-width: none;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+	}
+}
+
+/* Medium mobile */
+@media (min-width: 375px) and (max-width: 424px) {
+	#table {
+		padding: 80px 0;
+		.table-wrapper {
+			overflow-x: scroll;
+			scrollbar-width: none;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+	}
+}
+
+/* Large mobile */
+@media (min-width: 425px) and (max-width: 599px) {
+	#table {
+		padding: 80px 0;
+		.table-wrapper {
+			overflow-x: scroll;
+			scrollbar-width: none;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+	}
+}
+
+/* Small tablet */
+@media (min-width: 600px) and (max-width: 767px) {
+	#table {
+		padding: 80px 0;
+		.table-wrapper {
+			overflow-x: scroll;
+			scrollbar-width: none;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+	}
+}
+
+/* Medium tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+	#table {
+		padding: 80px 0;
+		.table-wrapper {
+			overflow-x: scroll;
+			scrollbar-width: none;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+	}
+}
+
+/* Large tablet */
+@media (min-width: 1024px) and (max-width: 1279px) {
+}
+
+/* Small laptop */
+@media (min-width: 1280px) and (max-width: 1439px) {
+}
+
+/* Medium laptop */
+@media (min-width: 1440px) and (max-width: 1599px) {
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+}
+
+@media (min-width: 1920px) and (max-width: 2559px) {
+}
+
+@media (min-width: 2560px) and (max-width: 3439px) {
+}
+
+@media (min-width: 3440px) and (max-width: 3839px) {
+}
+
+@media (min-width: 3840px) {
+}

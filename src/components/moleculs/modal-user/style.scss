@@ -1,0 +1,58 @@
+.modal-user {
+	.modal-dialog {
+		.modal-content {
+			.modal-body {
+				.flex {
+					display: flex;
+					align-items: center;
+					.image-user {
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						background: var(--gray-gr-04);
+					}
+					.detail-user {
+						.name {
+							padding: 0;
+							border: none;
+							outline: none;
+							background: transparent;
+							font-family: 'Public Sans';
+							font-size: 14px;
+							font-weight: 600;
+							line-height: 21px;
+							letter-spacing: 0.005em;
+							color: var(--gray-gr-02);
+							text-align: start;
+							cursor: unset;
+						}
+						.email {
+							font-family: 'Public Sans';
+							font-size: 14px;
+							font-weight: 400;
+							line-height: 21px;
+							letter-spacing: 0.005em;
+							color: var(--gray-gr-03);
+						}
+					}
+					.label {
+						font-family: 'Public Sans';
+						font-size: 14px;
+						font-weight: 600;
+						line-height: 21px;
+						letter-spacing: 0.005em;
+						color: var(--gray-gr-02);
+					}
+					.desc {
+						font-family: 'Public Sans';
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 21px;
+						letter-spacing: 0.005em;
+						color: var(--gray-gr-03);
+					}
+				}
+			}
+		}
+	}
+}
